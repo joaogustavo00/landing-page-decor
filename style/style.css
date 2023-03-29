@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --principal: #f59e2e;
+    --secundaria: #57565565;
+    --texto-cor: white;
+    --texto-secundaria: black;
+    --texto-terciaria: #5d5d5d;
+}
+
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Eventos de Formulario*/
+#event-description {
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0, 0, 0, 0.801)), url("../img/hrz-5.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--texto-cor);
+}
+
+#disclaimer h2,
+#disclaimer .event-date {
+    color: var(--principal);
+}
+
+#disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-event {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+#disclaimer .event-date {
+    font-weight: bold;
+}
+
+#subscription-form {
+    background-color: var(--texto-terciaria);
+    padding: 2em;
+    max-width: 22%;
+    border-radius: 0.9em;
+}
+
+#subscription-form p {
+    font-size: 1.5em;
+    color: var(--texto-secundaria);
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label {
+    color: var(--texto-cor);
+    margin-bottom: .3em;
+    font-weight: bold;
+    
+}
+
+.form-group input,
+.form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background-color: var(--principal);
+    color: var(--texto-cor);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 1em;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/*Sessão de beneficios*/
+#beneficios-chaves {
+    background-color: var(--secundaria);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.beneficio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--texto-terciaria);
+}
+
+.beneficio .beneficio-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+#beneficio-1 {
+    background-image: url("../img/sqr-1.jpg");
+}
+
+#beneficio-2 {
+    background-image: url("../img/sqr-2.jpg");
+}
+
+#beneficio-3 {
+    background-image: url("../img/sqr-3.jpg");
+}
+
+
+/* Localização de Evento*/
+#localização {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0, 0, 0, 0.801)), url("../img/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--texto-cor);
+    margin-bottom: 3em;
+}
+
+#endereço,
+#sobre-locação {
+    max-width: 30%;
+} 
+
+#endereço {
+    display: flex;
+}
+
+#endereço i {
+    color: var(--principal);
+    font-size: 4em;
+    margin-right: 0.5em;
+}
+
+#detalhes-endereço {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#sobre-locação h3 {
+    color: var(--principal);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#sobre-locação p {
+    line-height: 1.5em;
+}
+
+/*Detalhes de eventos*/
+
+#detalhes {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.detalhe {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5%;
+    margin-bottom: 4em;
+}
+
+.detalhe img {
+    width: 50%;
+}
+
+.detalhe h3 {
+    margin-bottom: 1em;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+#detalhe-1 h3 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.descrição-detalhes {
+    width: 100%;
+    padding-left: 2em;
+}
+
+.descrição-detalhes ul {
+    list-style-position: inside;
+}
+
+.descrição-detalhes ul li {
+    margin-bottom: 0.4em;
+}
+
+.descrição-detalhes ul li:last-child {
+    font-weight: bold;
+}
+
+/*Seção de chamada para ação*/
+#cta {
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0, 0, 0, 0.801)), url("../img/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    color: var(--texto-cor);
+}
+
+#cta h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#cta .btn {
+    width: 30%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.2em;
+    border-radius: 1em;
+}
+
+/* Rodape*/
+#rodape {
+    text-align: center;
+    color: var(--texto-secundaria);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#rodape h3 {
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+#rodape p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#rodape span {
+    font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 450px) {
+    .brn {
+        opacity: 1;
+    }
+
+    /*Formulario*/
+    #event-description {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h2  {
+        margin-bottom: 0.5em;
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin: 2em;
+    }
+
+    /*Sessão de Beneficios*/
+    .beneficios {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+    .beneficio {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /*Evento de Localização*/
+    #localização {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 0;
+    }
+
+    #endereço {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #endereço i {
+        margin: .3em 0;
+    }
+
+    #sobre-locação {
+        order: 1;
+        max-width: 100%;
+    }
+
+    #sobre-locação h3 {
+        margin-bottom: 0;
+    }
+
+    #sobre-locação p {
+        display: none;
+    }
+
+    /* Evento detalhado de container*/
+
+    .detalhe {
+        flex-direction: column;
+        margin-bottom: 0.5em;
+        gap: 0;
+    }
+
+    .detalhe img {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    #detalhe-1 img {
+        display: none;
+    }
+
+    .descrição-detalhes{
+        padding: 0;
+    }
+
+    #detalhe-3 img {
+        order: 2;
+    }
+
+    #detalhe-3 .descrição-detalhes {
+        order: 1;
+    }
+
+    /*Seção de chamada para ação*/
+    #cta {
+        text-align: center;
+    }
+
+    #cta .btn {
+        width: 80%;
+    }
+}   
